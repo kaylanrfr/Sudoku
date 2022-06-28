@@ -17,11 +17,11 @@ let resolverEntrada = () => {
             let elemento = linha.cells[j].querySelector('input').value;
 
             if (elemento) {
-                if (Number.isInteger(parseInt(elemento))|| elemento == "") {
+                if ((Number.isInteger(parseInt(elemento))|| elemento == "") && elemento!="0") {
                     tabuleiro[i][j] = parseInt(elemento);
                 }
                 else {
-                    return window.alert("Não é possível resolver, existem elementos não numéricos");
+                    return window.alert("Não é possível resolver, existem elementos não numéricos ou zeros");
                 }
             }
 
