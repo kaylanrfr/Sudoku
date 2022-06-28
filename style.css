@@ -32,5 +32,11 @@ input {
 
 
 section {
-  max-width: 212px;
+  max-width: 300px;
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
